@@ -28,7 +28,7 @@ class Application
       if @@items.include?(add_param)
         @@cart << add_param
       else
-        req.write "We don't have that item"
+        resp.write "We don't have that item"
       end
     else
       resp.write "Path Not Found"
